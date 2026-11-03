@@ -39,8 +39,15 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release view $env:GITHUB_REF_NAME --json tagName --repo $env:GITHUB_REPOSITORY 2>$null
-          if ($LASTEXITCODE -eq 0) {
+          $savedPreference = $ErrorActionPreference
+          $ErrorActionPreference = 'Continue'
+          try {
+            gh release view $env:GITHUB_REF_NAME --json tagName --repo $env:GITHUB_REPOSITORY 2>$null
+            $releaseExists = $LASTEXITCODE -eq 0
+          } finally {
+            $ErrorActionPreference = $savedPreference
+          }
+          if ($releaseExists) {
             Write-Host 'This release was already published; existing assets are preserved.'
             exit 0
           }
