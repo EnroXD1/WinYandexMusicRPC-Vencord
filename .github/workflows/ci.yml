@@ -1,0 +1,44 @@
+name: Build and tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 12.15.0
+          run_install: false
+          cache: false
+      - name: Test and build the installer
+        shell: powershell
+        run: .\scripts\Build.ps1 -Package
+      - name: Upload Windows package
+        uses: actions/upload-artifact@v7
+        with:
+          name: WinYandexMusicRPC-Windows
+          path: |
+            out/*.zip
+            out/*.sha256
+          if-no-files-found: error
+          retention-days: 14

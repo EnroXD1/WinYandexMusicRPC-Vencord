@@ -1,0 +1,39 @@
+name: Ошибка
+description: Сообщить о проблеме плагина или установщика
+body:
+  - type: markdown
+    attributes:
+      value: "Укажите безопасный текст ошибки. OAuth-токен, файл .bin и личные настройки прикладывать не нужно."
+  - type: input
+    id: version
+    attributes:
+      label: Версия плагина
+      placeholder: "1.0.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Источник / компонент
+      options:
+        - Windows media sessions
+        - Ynison
+        - Установщик / восстановление
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Версия Windows и клиент Discord
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как воспроизвести
+      description: Шаги, ожидаемый результат и фактическое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostic
+    attributes:
+      label: Текст ошибки
+      description: Сообщение из настроек плагина или установщика, без токена и личных данных

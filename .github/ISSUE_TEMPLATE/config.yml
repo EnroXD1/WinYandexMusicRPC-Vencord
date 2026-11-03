@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Оригинальная утилита WinYandexMusicRPC
+    url: https://github.com/FozerG/WinYandexMusicRPC
+    about: Оригинальный проект FozerG; этот репозиторий посвящён порту для Vencord.
