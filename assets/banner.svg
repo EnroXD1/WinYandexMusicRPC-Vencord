@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
+  <title id="title">WinYandexMusicRPC for Vencord</title>
+  <desc id="desc">Яндекс Музыка в статусе Discord. Порт для Vencord от EnroXD1 на основе оригинальной утилиты FozerG.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#151827"/><stop offset="1" stop-color="#101119"/></linearGradient>
+    <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7DA70"/><stop offset="1" stop-color="#E58D5C"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#5865F2" stop-opacity=".25"/><stop offset="1" stop-color="#5865F2" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="350" rx="22" fill="url(#bg)"/>
+  <ellipse cx="980" cy="175" rx="290" ry="240" fill="url(#glow)"/>
+  <path d="M48 55h34" stroke="#F4CF55" stroke-width="5" stroke-linecap="round"/>
+  <text x="97" y="62" fill="#B7BED4" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="3">VENCORD USERPLUGIN</text>
+  <text x="48" y="135" fill="#FAFBFF" font-family="Segoe UI,Arial,sans-serif" font-size="47" font-weight="750" letter-spacing="-1.5">WinYandexMusicRPC</text>
+  <text x="49" y="183" fill="#C0C5D6" font-family="Segoe UI,Arial,sans-serif" font-size="23">Ваша музыка — в вашем статусе Discord.</text>
+  <rect x="49" y="222" width="138" height="32" rx="16" fill="#F4CF55"/>
+  <text x="118" y="243" text-anchor="middle" fill="#1C1D24" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700">WINDOWS MEDIA</text>
+  <rect x="198" y="222" width="89" height="32" rx="16" fill="#242941" stroke="#3E4778"/>
+  <text x="242" y="243" text-anchor="middle" fill="#C6CDFF" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">YNISON</text>
+  <rect x="298" y="222" width="128" height="32" rx="16" fill="#242941" stroke="#3E4778"/>
+  <text x="362" y="243" text-anchor="middle" fill="#C6CDFF" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">RICH PRESENCE</text>
+  <text x="49" y="306" fill="#8F98B0" font-family="Segoe UI,Arial,sans-serif" font-size="14">Порт: EnroXD1</text>
+  <text x="217" y="306" fill="#727C97" font-family="Segoe UI,Arial,sans-serif" font-size="14">Оригинальная утилита: FozerG</text>
+  <rect x="752" y="65" width="394" height="220" rx="17" fill="#212433" stroke="#383E56"/>
+  <circle cx="778" cy="92" r="4" fill="#7CC8A0"/>
+  <text x="791" y="98" fill="#B7BED4" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="1.1">СЛУШАЕТ ЯНДЕКС МУЗЫКУ</text>
+  <rect x="776" y="119" width="94" height="94" rx="13" fill="url(#cover)"/>
+  <circle cx="823" cy="166" r="29" fill="none" stroke="#322B35" stroke-width="2" opacity=".65"/>
+  <circle cx="823" cy="166" r="13" fill="#322B35" opacity=".9"/>
+  <circle cx="823" cy="166" r="4" fill="#F7DA70"/>
+  <text x="890" y="143" fill="#F7F8FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="650">Ваш любимый трек</text>
+  <text x="890" y="171" fill="#B9C0D4" font-family="Segoe UI,Arial,sans-serif" font-size="15">Имя исполнителя</text>
+  <text x="890" y="196" fill="#8F98B0" font-family="Segoe UI,Arial,sans-serif" font-size="13">Альбом · Сейчас играет</text>
+  <rect x="776" y="236" width="345" height="4" rx="2" fill="#41465C"/>
+  <rect x="776" y="236" width="177" height="4" rx="2" fill="#F4CF55"/>
+  <circle cx="953" cy="238" r="5" fill="#F4CF55"/>
+  <text x="776" y="264" fill="#8F98B0" font-family="Segoe UI,Arial,sans-serif" font-size="12">1:42</text>
+  <text x="1121" y="264" text-anchor="end" fill="#8F98B0" font-family="Segoe UI,Arial,sans-serif" font-size="12">3:20</text>
+</svg>
