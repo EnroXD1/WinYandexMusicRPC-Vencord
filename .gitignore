@@ -1,0 +1,13 @@
+work/
+out/
+dist/
+node_modules/
+*.zip
+*.log
+*.bin
+.env
+.env.*
+settings.json
+.DS_Store
+Thumbs.db
+.vscode/
